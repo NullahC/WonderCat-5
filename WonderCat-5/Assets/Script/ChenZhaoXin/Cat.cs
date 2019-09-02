@@ -10,16 +10,16 @@ public class Cat : MonoBehaviour
 
     private bool MousePressedJudge = false;
     private Rigidbody2D CatRig = null;
-   // private Transform CarPos = null;
-    private float CarY = 0;
+    private float LastY = 0;
     private float CatY = 0;
     private bool Grouded = false;
     private bool CanAddForce = false;
+    private Animator Anim = null;
     // Start is called before the first frame update
     void Start()
     {
         CatRig = GetComponent<Rigidbody2D>();
-        
+        Anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,17 +33,20 @@ public class Cat : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         Grouded = false;
-        Debug.Log(" Grouded = false");
-        
+       // Debug.Log(" Grouded = false");
+        Anim.SetBool("Grounded", false);            
+        Anim.SetBool("Falling", false);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        LastY = transform.position.y;
         Grouded = true;
-        Debug.Log(" Grouded = true");
+       // Debug.Log(" Grouded = true");
+        Anim.SetBool("Grounded", true);
+        
     }
     private void FixedUpdate()
     {
-        CarY = GameObject.FindGameObjectWithTag("Car").transform.position.y;
         CatY = transform.position.y;
         MousePressedJudge = Input.GetButton("Fire1");
         if(Grouded)
@@ -54,15 +57,20 @@ public class Cat : MonoBehaviour
         {
             if (Input.GetButtonUp("Fire1"))
                 CanAddForce = false;
+            Anim.SetBool("Falling", true);
+            Anim.SetBool("Jumping", false);
         }
-        if(CatY - CarY >= JumpHeight)
+        if(CatY - LastY >= JumpHeight)
         {
             CanAddForce = false;
+            Anim.SetBool("Falling", true);
+            Anim.SetBool("Jumping", false);
         }
 
         if (MousePressedJudge&&CanAddForce)
         {
             CatRig.AddForce(new Vector2(ForceX, ForceY));
+            Anim.SetBool("Jumping", true);
         }
     }
 }
