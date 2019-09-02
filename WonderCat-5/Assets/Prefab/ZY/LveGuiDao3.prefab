@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 916731755872977913}
   - component: {fileID: 3050564617951915042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayA (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2817210861311490765}
   - component: {fileID: 8429701235132932832}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayA (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 338626220870555459}
   - component: {fileID: 4803282777303045481}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LveGuiDao3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99915540882375573}
   - component: {fileID: 8865018781677106257}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayB (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879756183719781990}
   - component: {fileID: 2896248020632007841}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayB (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

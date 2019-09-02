@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6807505167228687719}
   - component: {fileID: 2740425361194765332}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayB (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2598568719863807063}
   - component: {fileID: 7107935015335284372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayA (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2143680191476138633}
   - component: {fileID: 1119428426501294052}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayB (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756212097656914201}
   - component: {fileID: 4367545553368346741}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ZiGuiDao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5600078905424803668}
   - component: {fileID: 2958185729630204579}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayA (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
