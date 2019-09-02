@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5612711377697353823}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TheEnd1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5025330996522073162}
   - component: {fileID: 1432347500030469179}
-  m_Layer: 0
+  - component: {fileID: 5497662944821029118}
+  m_Layer: 11
   m_Name: 'TheEnd_level 1 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 7683416948866871214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.005662, y: 1.1198796, z: -0.08554687}
-  m_LocalScale: {x: 0.73878, y: 0.73878, z: 0.73878}
+  m_LocalScale: {x: 1.0530571, y: 1.0530571, z: 1.0530571}
   m_Children: []
   m_Father: {fileID: 5612711377697353823}
   m_RootOrder: 0
@@ -99,7 +100,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 7b5aab40b59559e408de1ff8f830e588, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -111,6 +112,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &5497662944821029118
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683416948866871214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.9231361, y: -0.5059233}
+  - {x: 1.5710311, y: -0.4732584}
 --- !u!1 &8599397852895500037
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +141,7 @@ GameObject:
   - component: {fileID: 3936982223000964970}
   - component: {fileID: 5156540183067160050}
   - component: {fileID: 8682561353250802870}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

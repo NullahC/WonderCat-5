@@ -117,7 +117,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.015494384, y: 1.2504977}
+  m_ConnectedAnchor: {x: 0.015494426, y: 1.2504978}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 300
@@ -243,7 +243,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.015494384, y: -1.2645718}
+  m_ConnectedAnchor: {x: 0.015494426, y: -1.2645712}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 300
@@ -404,9 +404,9 @@ GameObject:
   - component: {fileID: 2560318298495959915}
   - component: {fileID: 2423722840052250993}
   - component: {fileID: 2423722840052250992}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire (3)
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +544,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.18}
-  m_ConnectedAnchor: {x: 1.0668465, y: 0.020790167}
+  m_ConnectedAnchor: {x: 1.0668465, y: 0.020790001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -567,9 +567,9 @@ GameObject:
   - component: {fileID: 2560318298629708166}
   - component: {fileID: 2423722840396884738}
   - component: {fileID: 2423722840396884741}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,9 +730,9 @@ GameObject:
   - component: {fileID: 2560318298556860555}
   - component: {fileID: 2423722839734470959}
   - component: {fileID: 2423722839734470958}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire (2)
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -870,7 +870,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.18}
-  m_ConnectedAnchor: {x: -1.0807779, y: 0.020790167}
+  m_ConnectedAnchor: {x: -1.0807779, y: 0.020790001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -893,9 +893,9 @@ GameObject:
   - component: {fileID: 2560318297750152048}
   - component: {fileID: 2423722839217627444}
   - component: {fileID: 2423722839217627447}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire (1)
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

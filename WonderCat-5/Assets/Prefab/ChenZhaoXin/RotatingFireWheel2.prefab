@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3323744137545382270}
   - component: {fileID: 3323744137545382271}
   - component: {fileID: 5117708333993251961}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -4.9847317, y: -1.9942071}
+  m_ConnectedAnchor: {x: -1.0365055, y: -1.5398319}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 100
@@ -135,9 +135,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3323744137809073525}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotatingFireWheel2
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,9 +173,9 @@ GameObject:
   - component: {fileID: 3173515288229872314}
   - component: {fileID: 3323744136950716151}
   - component: {fileID: 3323744136950716144}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire (1)
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,9 +336,9 @@ GameObject:
   - component: {fileID: 3173515288409938265}
   - component: {fileID: 3323744137813649990}
   - component: {fileID: 3323744137813649991}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

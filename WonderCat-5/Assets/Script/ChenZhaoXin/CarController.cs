@@ -26,10 +26,10 @@ public class CarController : MonoBehaviour
     {
         Wheel[0].useMotor = true;
         Wheel[1].useMotor = true;
+        FreezeZ.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         FreezeZ.constraints = RigidbodyConstraints2D.None;
-
     }
 }

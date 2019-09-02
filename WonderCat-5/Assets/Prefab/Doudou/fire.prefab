@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 103605088487859339}
   - component: {fileID: 5738355667271792162}
   - component: {fileID: 5980450575556615416}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire
-  m_TagString: Untagged
+  m_TagString: KillingGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

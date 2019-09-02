@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7235491536810196323}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TheEnd2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 6996142614902358926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.1332614, y: -0.45146167, z: 0.08554687}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4767, y: 1.4767, z: 1.4767}
   m_Children:
   - {fileID: 1536279285678953394}
   - {fileID: 4871356424679538635}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4871356424679538635}
   - component: {fileID: 8566800718438918828}
   - component: {fileID: 4888495372853619314}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Particle System (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4749,7 +4749,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1536279285678953394}
   - component: {fileID: 519666679598152209}
-  m_Layer: 0
+  - component: {fileID: 7006468246791457830}
+  m_Layer: 11
   m_Name: TheEnd_level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4806,7 +4807,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 3b10f9d30fd06cd4ab7301e27054d7b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4818,3 +4819,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &7006468246791457830
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175019520052206435}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.928688, y: -0.8077114}
+  - {x: 1.8781912, y: -0.8077119}
