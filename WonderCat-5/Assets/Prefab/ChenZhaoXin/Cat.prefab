@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8937951600138457769}
   m_Layer: 8
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,9 +144,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.040858887}
+  m_Offset: {x: 0, y: 0.020479817}
   serializedVersion: 2
-  m_Radius: 0.82914114
+  m_Radius: 0.8495202
 --- !u!114 &8937951600138457770
 MonoBehaviour:
   m_ObjectHideFlags: 0
