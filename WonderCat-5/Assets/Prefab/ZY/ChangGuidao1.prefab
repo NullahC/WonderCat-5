@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008830364110837811}
   - component: {fileID: 3768404755568691398}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayB (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3725046813994649226}
   - component: {fileID: 5330069400057146761}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayA (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2174225417147637913}
   - component: {fileID: 5697480006511287615}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayA (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6745649466757510618}
   - component: {fileID: 3785064520898642593}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PathwayA (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 925447077849122161}
   - component: {fileID: 7174740535709976691}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ChangGuidao1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

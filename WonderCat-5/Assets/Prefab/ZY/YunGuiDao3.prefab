@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6145587766422332308}
   - component: {fileID: 2620754361540414171}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000166
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2537461328823911964}
   - component: {fileID: 6385910576784690228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000065
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7572163938543923004}
   - component: {fileID: 8204247017980887431}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: YunGuiDao3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7983031529540999473}
   - component: {fileID: 1247815787870695592}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
