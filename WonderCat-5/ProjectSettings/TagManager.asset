@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Car
   - Hero
+  - diamond
   layers:
   - Default
   - TransparentFX
