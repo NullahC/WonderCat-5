@@ -38,6 +38,7 @@ public class ResverserController : MonoBehaviour
             right.motorSpeed = -400;
             LWheel.motor = left;
             RWheel.motor = right;
+            GameObject.FindGameObjectWithTag("Hero").transform.rotation = Quaternion.Euler(Vector3.left*180);
         }
         
     }

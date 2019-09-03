@@ -444,6 +444,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Reverser
       objectReference: {fileID: 0}
+    - target: {fileID: 4896645806913194208, guid: 3f8f4a9a60bc9774887531ede5244243,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f8f4a9a60bc9774887531ede5244243, type: 3}
 --- !u!1 &426515824
