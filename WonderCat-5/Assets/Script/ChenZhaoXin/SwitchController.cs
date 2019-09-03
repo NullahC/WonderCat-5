@@ -26,7 +26,7 @@ public class SwitchController : MonoBehaviour
     {
         if(MovedBySwitch.tag=="ZhaMen"&&SwitchJudge)
         {
-            RaiseH=RaiseH+0.02f;
+            RaiseH=RaiseH+0.008f;
             MovedBySwitch.transform.position = new Vector2(MovedBySwitch.transform.position.x, MovedBySwitch.transform.position.y+ RaiseH);
         }
     }

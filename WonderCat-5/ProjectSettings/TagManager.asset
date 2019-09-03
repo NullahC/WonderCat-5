@@ -8,6 +8,9 @@ TagManager:
   - Hero
   - Wheel
   - KillingGameObject
+  - ZhaMen
+  - Fire
+  - End
   layers:
   - Default
   - TransparentFX

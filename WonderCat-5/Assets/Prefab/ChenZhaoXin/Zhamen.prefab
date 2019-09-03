@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3511543666183074611}
   m_Layer: 13
   m_Name: Zhamen
-  m_TagString: KillingGameObject
+  m_TagString: ZhaMen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 5095149355096527028}
   m_Layer: 13
   m_Name: zhamen_haed
-  m_TagString: KillingGameObject
+  m_TagString: ZhaMen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

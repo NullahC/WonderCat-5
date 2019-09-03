@@ -36,7 +36,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.16}
-  m_ConnectedAnchor: {x: 0.963553, y: 0.041292515}
+  m_ConnectedAnchor: {x: 0.963553, y: 0.041292656}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 2423722839034448634}
   - component: {fileID: 2423722839034448633}
   - component: {fileID: 2423722839034448632}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 2423722839744028883}
   - component: {fileID: 2423722839744028894}
   - component: {fileID: 2423722839744028881}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.015494497, y: -1.2645718}
+  m_ConnectedAnchor: {x: 0.015494497, y: -1.2645713}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 300
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 2423722839857425916}
   - component: {fileID: 2423722839857425919}
   - component: {fileID: 2423722839857425917}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2423722840062356905}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotatingFireWheel3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.16}
-  m_ConnectedAnchor: {x: -0.93764496, y: 0.041292515}
+  m_ConnectedAnchor: {x: -0.9376446, y: 0.041292656}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -516,7 +516,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.16}
-  m_ConnectedAnchor: {x: -0.93764496, y: 0.0000003304485}
+  m_ConnectedAnchor: {x: -0.9376446, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -561,7 +561,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.16}
-  m_ConnectedAnchor: {x: 0.963553, y: 0.0000003304485}
+  m_ConnectedAnchor: {x: 0.963553, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -581,6 +581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: skyfire1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8901000159180921510, guid: 9dc154c5a91f74548babde3d7c862bee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8901000159180921505, guid: 9dc154c5a91f74548babde3d7c862bee,
         type: 3}
@@ -668,6 +673,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: skyfire1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8901000159180921510, guid: 9dc154c5a91f74548babde3d7c862bee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8901000159180921505, guid: 9dc154c5a91f74548babde3d7c862bee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -754,6 +764,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: skyfire1
       objectReference: {fileID: 0}
+    - target: {fileID: 8901000159180921510, guid: 9dc154c5a91f74548babde3d7c862bee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8901000159180921505, guid: 9dc154c5a91f74548babde3d7c862bee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -839,6 +854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: skyfire1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8901000159180921510, guid: 9dc154c5a91f74548babde3d7c862bee,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8901000159180921505, guid: 9dc154c5a91f74548babde3d7c862bee,
         type: 3}

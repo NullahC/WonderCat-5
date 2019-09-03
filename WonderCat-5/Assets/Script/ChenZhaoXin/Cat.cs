@@ -15,9 +15,12 @@ public class Cat : MonoBehaviour
     private bool Grouded = false;
     private bool CanAddForce = false;
     private Animator Anim = null;
-    public bool CatDead=false;
+    private bool CatDead=false;
     private BoxCollider2D BoxC = null;
     private CircleCollider2D CircleC = null;
+    private bool InEnd = false;
+    private float CatScaleXInEnd = 0;
+    private float CatPInend = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,7 @@ public class Cat : MonoBehaviour
         Anim = GetComponent<Animator>();
         BoxC = GetComponent<BoxCollider2D>();
         CircleC = GetComponent<CircleCollider2D>();
+        CatScaleXInEnd = transform.localScale.x;
     }
 
     // Update is called once per frame
@@ -48,8 +52,10 @@ public class Cat : MonoBehaviour
         Grouded = true;
        // Debug.Log(" Grouded = true");
         Anim.SetBool("Grounded", true);
-        if (collision.gameObject.CompareTag("KillingGameObject"))
+        if (collision.gameObject.CompareTag("ZhaMen")|| collision.gameObject.CompareTag("Fire"))
             CatDead = true;
+        if (collision.gameObject.CompareTag("End"))
+            InEnd = true;
         
     }
     private void FixedUpdate()
@@ -87,6 +93,23 @@ public class Cat : MonoBehaviour
             Anim.SetTrigger("Dead");
             CatRig.AddForce(new Vector2(-200, 400));
             CatDead = false;
+        }
+        else if(InEnd)
+        {
+            if(CatScaleXInEnd>=0.05)
+            CatScaleXInEnd = CatScaleXInEnd - 0.01f;
+            transform.localScale = new Vector3(CatScaleXInEnd, transform.localScale.y, transform.localScale.z);
+            if (CatScaleXInEnd <= 0.05)
+            {
+                CatPInend = CatPInend + 0.02f;
+                transform.position = new Vector2(transform.position.x, transform.position.y + CatPInend);
+
+                if (transform.position.y == 20)
+                {
+                    CatRig.gravityScale = 0;
+                    InEnd = false;
+                }
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2423722839034448634}
   - component: {fileID: 2423722839034448633}
   - component: {fileID: 2423722839034448632}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.015494426, y: 1.2504978}
+  m_ConnectedAnchor: {x: 0.015494342, y: 1.2504977}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 300
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 2423722839744028883}
   - component: {fileID: 2423722839744028894}
   - component: {fileID: 2423722839744028881}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.015494426, y: -1.2645712}
+  m_ConnectedAnchor: {x: 0.015494342, y: -1.2645714}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 300
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 2423722839857425916}
   - component: {fileID: 2423722839857425919}
   - component: {fileID: 2423722839857425917}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2423722840062356905}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotatingFireWheel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ Transform:
   m_GameObject: {fileID: 2423722840062356907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.9543467, y: -0.5604147, z: 0.024414062}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5052, y: 1.5052, z: 1.5052}
   m_Children:
   - {fileID: 2423722839034448635}
   - {fileID: 7879816904770908639}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 2423722840052250992}
   m_Layer: 13
   m_Name: fire (3)
-  m_TagString: KillingGameObject
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +544,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.18}
-  m_ConnectedAnchor: {x: 1.0668465, y: 0.020790001}
+  m_ConnectedAnchor: {x: 1.0668458, y: 0.020790078}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 2423722840396884741}
   m_Layer: 13
   m_Name: fire
-  m_TagString: KillingGameObject
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 2423722839734470958}
   m_Layer: 13
   m_Name: fire (2)
-  m_TagString: KillingGameObject
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -870,7 +870,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.18}
-  m_ConnectedAnchor: {x: -1.0807779, y: 0.020790001}
+  m_ConnectedAnchor: {x: -1.0807809, y: 0.020790078}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 2423722839217627447}
   m_Layer: 13
   m_Name: fire (1)
-  m_TagString: KillingGameObject
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
