@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class ResverserController : MonoBehaviour
 {
-    private WheelJoint2D[] Wheel = null;
+    public WheelJoint2D LWheel;
+    public WheelJoint2D RWheel;
     private JointMotor2D left;
     private JointMotor2D right;
     // Start is called before the first frame update
     void Start()
     {
-        Wheel = GetComponentsInChildren<WheelJoint2D>();
-        left = Wheel[0].motor;
-        right = Wheel[1].motor;
+        left = LWheel.motor;
+        right = RWheel.motor;
     }
 
     // Update is called once per frame
@@ -32,10 +32,12 @@ public class ResverserController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name=="Reverser")
+        if (collision.gameObject.CompareTag("Reverser"))
         {
-            left.motorSpeed = -left.motorSpeed;
-            right.motorSpeed = -right.motorSpeed;
+            left.motorSpeed = -400;
+            right.motorSpeed = -400;
+            LWheel.motor = left;
+            RWheel.motor = right;
         }
         
     }
