@@ -15,11 +15,16 @@ public class Cat : MonoBehaviour
     private bool Grouded = false;
     private bool CanAddForce = false;
     private Animator Anim = null;
+    public bool CatDead=false;
+    private BoxCollider2D BoxC = null;
+    private CircleCollider2D CircleC = null;
     // Start is called before the first frame update
     void Start()
     {
         CatRig = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
+        BoxC = GetComponent<BoxCollider2D>();
+        CircleC = GetComponent<CircleCollider2D>();
     }
 
     // Update is called once per frame
@@ -43,6 +48,8 @@ public class Cat : MonoBehaviour
         Grouded = true;
        // Debug.Log(" Grouded = true");
         Anim.SetBool("Grounded", true);
+        if (collision.gameObject.CompareTag("KillingGameObject"))
+            CatDead = true;
         
     }
     private void FixedUpdate()
@@ -71,6 +78,15 @@ public class Cat : MonoBehaviour
         {
             CatRig.AddForce(new Vector2(ForceX, ForceY));
             Anim.SetBool("Jumping", true);
+        }
+
+        if(CatDead)
+        {
+            BoxC.enabled = false;
+            CircleC.enabled = false;
+            Anim.SetTrigger("Dead");
+            CatRig.AddForce(new Vector2(-200, 400));
+            CatDead = false;
         }
     }
 }

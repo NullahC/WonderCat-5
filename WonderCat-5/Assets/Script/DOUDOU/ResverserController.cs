@@ -24,7 +24,7 @@ public class ResverserController : MonoBehaviour
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
-    //    if (collision.gameObject.CompareTag( "Resverser"))
+    //    if (collision.gameObject.CompareTag( "Reverser"))
     //    {
     //        transform.rotation = Quaternion.Euler(Vector3.up*180);
     //    }
