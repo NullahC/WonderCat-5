@@ -50,7 +50,6 @@ public class Cat : MonoBehaviour
     {
         LastY = transform.position.y;
         Grouded = true;
-       // Debug.Log(" Grouded = true");
         Anim.SetBool("Grounded", true);
         if (collision.gameObject.CompareTag("ZhaMen")|| collision.gameObject.CompareTag("Fire"))
             CatDead = true;
