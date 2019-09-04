@@ -55,7 +55,6 @@ public class Cat : MonoBehaviour
             CatDead = true;
         if (collision.gameObject.CompareTag("End"))
             InEnd = true;
-        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
