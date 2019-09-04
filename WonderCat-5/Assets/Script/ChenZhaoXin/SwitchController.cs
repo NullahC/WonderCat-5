@@ -6,7 +6,7 @@ public class SwitchController : MonoBehaviour
 {
     public Sprite OpenSwitch = null;
     public Sprite CloseSwitch = null;
-    public GameObject MovedBySwitch = null;
+    public GameObject []MovedBySwitch = null;
 
     private SpriteRenderer SwitchRender = null;
     private bool SwitchJudge = false;
@@ -24,10 +24,13 @@ public class SwitchController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(MovedBySwitch.tag=="ZhaMen"&&SwitchJudge)
+        for (int i = 0; i < MovedBySwitch.Length; i++)
         {
-            RaiseH=RaiseH+0.008f;
-            MovedBySwitch.transform.position = new Vector2(MovedBySwitch.transform.position.x, MovedBySwitch.transform.position.y+ RaiseH);
+            if (MovedBySwitch[i].tag == "ZhaMen" && SwitchJudge)
+            {
+                RaiseH = RaiseH + 0.008f;
+                MovedBySwitch[i].transform.position = new Vector2(MovedBySwitch[i].transform.position.x, MovedBySwitch[i].transform.position.y + RaiseH);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
