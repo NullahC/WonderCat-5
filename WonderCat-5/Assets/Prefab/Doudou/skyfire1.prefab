@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8332325013643934329}
   m_Layer: 0
   m_Name: skyfire1
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8901000159180921510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.03502618, y: 0.07853045, z: 0}
-  m_LocalScale: {x: 3.1196873, y: 2.1631, z: 1}
+  m_LocalScale: {x: 2.7297263, y: 2.1631, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -113,6 +113,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0020207763, y: 0}
-  m_Size: {x: 0.2836259, y: 0.64}
+  m_Offset: {x: -0.0020207346, y: -0.08134878}
+  m_Size: {x: 0.2148351, y: 0.47730228}
   m_Direction: 0
