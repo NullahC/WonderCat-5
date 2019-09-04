@@ -26,11 +26,23 @@ public class SwitchController : MonoBehaviour
     {
         for (int i = 0; i < MovedBySwitch.Length; i++)
         {
-            if (MovedBySwitch[i].tag == "ZhaMen" && SwitchJudge)
+            try
             {
-                RaiseH = RaiseH + 0.008f;
-                MovedBySwitch[i].transform.position = new Vector2(MovedBySwitch[i].transform.position.x, MovedBySwitch[i].transform.position.y + RaiseH);
+                if (MovedBySwitch[i].tag == "ZhaMen" && SwitchJudge)
+                {
+                    RaiseH = RaiseH + 0.008f;
+                    MovedBySwitch[i].transform.position = new Vector2(MovedBySwitch[i].transform.position.x, MovedBySwitch[i].transform.position.y + RaiseH);
+                }
+                else if (MovedBySwitch[i].tag == "Fire" && SwitchJudge)
+                {
+                    Destroy(MovedBySwitch[i]);
+                }
             }
+            catch(System.Exception)
+            {
+
+            }
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
