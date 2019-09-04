@@ -278,6 +278,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CAR
       objectReference: {fileID: 0}
+    - target: {fileID: 2681300531163729974, guid: d76d504faf8c5bb479a7241e4f5aa349,
+        type: 3}
+      propertyPath: m_Motor.m_MotorSpeed
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 2681300531935740535, guid: d76d504faf8c5bb479a7241e4f5aa349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -350,11 +355,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2681300531163729974, guid: d76d504faf8c5bb479a7241e4f5aa349,
-        type: 3}
-      propertyPath: m_Motor.m_MotorSpeed
-      value: 400
-      objectReference: {fileID: 0}
     - target: {fileID: 2681300531585200167, guid: d76d504faf8c5bb479a7241e4f5aa349,
         type: 3}
       propertyPath: m_Motor.m_MotorSpeed
@@ -377,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 4896645805283692654, guid: 3f8f4a9a60bc9774887531ede5244243,
         type: 3}
       propertyPath: m_TagString
-      value: Reverser
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4896645805283692653, guid: 3f8f4a9a60bc9774887531ede5244243,
         type: 3}
@@ -1112,7 +1112,7 @@ PrefabInstance:
     - target: {fileID: 8937951600138457764, guid: eaff7dc4117d9f147946ecfd4ccc1c3c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1065891
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 8937951600138457764, guid: eaff7dc4117d9f147946ecfd4ccc1c3c,
         type: 3}
@@ -1163,6 +1163,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937951600138457765, guid: eaff7dc4117d9f147946ecfd4ccc1c3c,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaff7dc4117d9f147946ecfd4ccc1c3c, type: 3}
