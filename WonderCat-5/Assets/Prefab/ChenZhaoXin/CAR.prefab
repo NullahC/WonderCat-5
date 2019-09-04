@@ -92,7 +92,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 2681300531163729978}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f2e7e1ebbba51e546a331d0fd88d1e97, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -137,8 +137,8 @@ WheelJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 3.278883, y: -1.0074652}
   m_Suspension:
-    m_DampingRatio: 0.7
-    m_Frequency: 100
+    m_DampingRatio: 1
+    m_Frequency: 500
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -315,7 +315,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 2681300531585200170}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f2e7e1ebbba51e546a331d0fd88d1e97, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -360,8 +360,8 @@ WheelJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.205883, y: -1.0074652}
   m_Suspension:
-    m_DampingRatio: 0.7
-    m_Frequency: 100
+    m_DampingRatio: 1
+    m_Frequency: 500
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 637165139}
   - component: {fileID: 637165138}
   - component: {fileID: 637165141}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CAR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!68 &637165139
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0eb6c5ceef55514dafe0f4fe9cfb6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MotorSpeed: 400
 --- !u!1 &2681300532640302201
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3323744137545382270}
   - component: {fileID: 3323744137545382271}
   - component: {fileID: 5117708333993251961}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotationFireWheel_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,10 +117,10 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -4.9847317, y: -1.9942071}
+  m_ConnectedAnchor: {x: 18.51272, y: 0.37562}
   m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 100
+    m_MotorSpeed: 500
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3323744137809073525}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RotatingFireWheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 3323744137809073526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.2399282, y: -0.7666084, z: 1.3810853}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2781, y: 1.2781, z: 1.2781}
   m_Children:
   - {fileID: 7122512096165252086}
   - {fileID: 3323744137545382269}
@@ -173,9 +173,9 @@ GameObject:
   - component: {fileID: 3173515288229872314}
   - component: {fileID: 3323744136950716151}
   - component: {fileID: 3323744136950716144}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire (1)
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,7 +313,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.14}
-  m_ConnectedAnchor: {x: 1.0237204, y: 0.019713221}
+  m_ConnectedAnchor: {x: 1.0237216, y: 0.019713277}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -336,9 +336,9 @@ GameObject:
   - component: {fileID: 3173515288409938265}
   - component: {fileID: 3323744137813649990}
   - component: {fileID: 3323744137813649991}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: fire
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +476,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.14}
-  m_ConnectedAnchor: {x: -0.93257964, y: 0.019713221}
+  m_ConnectedAnchor: {x: -0.9325794, y: 0.019713277}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
