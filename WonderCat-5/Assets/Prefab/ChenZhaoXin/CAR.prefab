@@ -475,6 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotorSpeed: 400
+  FollowTheCat: 0
 --- !u!1 &2681300532640302201
 GameObject:
   m_ObjectHideFlags: 0

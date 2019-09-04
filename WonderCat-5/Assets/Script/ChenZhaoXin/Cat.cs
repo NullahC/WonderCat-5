@@ -51,11 +51,16 @@ public class Cat : MonoBehaviour
         LastY = transform.position.y;
         Grouded = true;
         Anim.SetBool("Grounded", true);
-        if (collision.gameObject.CompareTag("ZhaMen")|| collision.gameObject.CompareTag("Fire"))
+        if (collision.gameObject.CompareTag("ZhaMen"))
             CatDead = true;
         if (collision.gameObject.CompareTag("End"))
             InEnd = true;
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Fire"))
+            CatDead = true;
     }
     private void FixedUpdate()
     {

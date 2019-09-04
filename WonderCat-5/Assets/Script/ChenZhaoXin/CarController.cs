@@ -5,16 +5,20 @@ using UnityEngine;
 public class CarController : MonoBehaviour
 {
     public float MotorSpeed = 400;
+    public bool FollowTheCat = false;
+    
     private WheelJoint2D []Wheel = null;
     private JointMotor2D wheelmotorF ;
     private JointMotor2D wheelmotorB;
     private Rigidbody2D CarRig = null;
     private bool CarMove = false;
+    private Transform CatT = null;
     // Start is called before the first frame update
     void Start()
     {
         Wheel =GetComponentsInChildren<WheelJoint2D>();
         CarRig = GetComponent<Rigidbody2D>();
+        CatT = GameObject.FindGameObjectWithTag("Hero").transform;
         wheelmotorF = Wheel[0].motor;
         wheelmotorB = Wheel[1].motor;
     }
@@ -26,9 +30,10 @@ public class CarController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-       // print(Wheel[0].motor.motorSpeed);
-
-
+        if( FollowTheCat)
+        {
+            transform.position =new Vector2(CatT.transform.position.x-2, transform.position.y);
+        }
     }
      void OnCollisionEnter2D(Collision2D collision)
     {
