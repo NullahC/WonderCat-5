@@ -10,6 +10,9 @@ TagManager:
   - Car
   - Fire
   - ZhaMen
+  - diamond
+  - edge
+  - bat
   layers:
   - Default
   - TransparentFX

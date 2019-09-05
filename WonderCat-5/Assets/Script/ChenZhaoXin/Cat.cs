@@ -60,6 +60,11 @@ public class Cat : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Fire"))
             CatDead = true;
+
+        if(collision.gameObject.CompareTag("diamond"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
     private void FixedUpdate()
     {

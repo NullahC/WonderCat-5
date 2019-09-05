@@ -2,18 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destory : MonoBehaviour
+public class edge : MonoBehaviour
 {
-    public float DestroyTime = 2.0f;
+    public bool catCome = false;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, DestroyTime);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Hero"))
+        {
+            catCome = true;
+        }
     }
 }
