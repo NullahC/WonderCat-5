@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SwitchController : MonoBehaviour
 {
+    [HideInInspector]
     public Sprite OpenSwitch = null;
+    [HideInInspector]
     public Sprite CloseSwitch = null;
     public GameObject []MovedBySwitch = null;
 

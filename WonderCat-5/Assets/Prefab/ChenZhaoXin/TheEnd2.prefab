@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7235491536810196323}
   m_Layer: 11
   m_Name: TheEnd2
-  m_TagString: Untagged
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4752,7 +4752,7 @@ GameObject:
   - component: {fileID: 7006468246791457830}
   m_Layer: 11
   m_Name: TheEnd_level2
-  m_TagString: Untagged
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
