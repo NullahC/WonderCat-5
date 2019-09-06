@@ -11,11 +11,13 @@ public class CarController : MonoBehaviour
     private JointMotor2D wheelmotorF ;
     private JointMotor2D wheelmotorB;
     private Rigidbody2D CarRig = null;
-    private bool CarMove = false;
+    private bool CarMove = true;
     private Transform CatT = null;
+    private CircleCollider2D[] WheelsCollider = null;
     // Start is called before the first frame update
     void Start()
     {
+        WheelsCollider = GetComponentsInChildren<CircleCollider2D>();
         Wheel =GetComponentsInChildren<WheelJoint2D>();
         CarRig = GetComponent<Rigidbody2D>();
         CatT = GameObject.FindGameObjectWithTag("Hero").transform;
@@ -37,17 +39,32 @@ public class CarController : MonoBehaviour
     }
      void OnCollisionEnter2D(Collision2D collision)
     {
-        Wheel[0].useMotor = true;
-        Wheel[1].useMotor = true;
-        wheelmotorF.motorSpeed = MotorSpeed;
-        wheelmotorB.motorSpeed = MotorSpeed;
-        Wheel[0].motor = wheelmotorF;
-        Wheel[1].motor = wheelmotorB;
+          if (collision.gameObject.CompareTag("Hero"))
+        {
+            if (CarMove)
+            {
+                Wheel[0].useMotor = true;
+                Wheel[1].useMotor = true;
+                wheelmotorF.motorSpeed = MotorSpeed;
+                wheelmotorB.motorSpeed = MotorSpeed;
+                Wheel[0].motor = wheelmotorF;
+                Wheel[1].motor = wheelmotorB;
+                CarMove = false;
+            }
 
-        CarRig.constraints = RigidbodyConstraints2D.FreezeRotation;
+            CarRig.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         CarRig.constraints = RigidbodyConstraints2D.None;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        CarRig.constraints = RigidbodyConstraints2D.None;
+        GetComponent<EdgeCollider2D>().enabled = false;
+        WheelsCollider[0].enabled = false;
+        WheelsCollider[0].enabled = false;
     }
 }
