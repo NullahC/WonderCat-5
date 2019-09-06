@@ -13,6 +13,8 @@ TagManager:
   - diamond
   - edge
   - bat
+  - DeathPlane
+  - Reverser
   layers:
   - Default
   - TransparentFX
