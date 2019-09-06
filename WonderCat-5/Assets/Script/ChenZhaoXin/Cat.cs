@@ -22,6 +22,8 @@ public class Cat : MonoBehaviour
     private float CatScaleXInEnd = 0;
     private float CatPInend = 0;
     private int InEndTimeCounter = 0;
+    private bool Filped = false;
+    private GameObject Car = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,12 @@ public class Cat : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            Car = collision.gameObject;
+            Filped = Car.GetComponent<CarController>().Filped;
+            GetComponent<SpriteRenderer>().flipX = Filped;
+        }
         LastY = transform.position.y;
         Grouded = true;
         Anim.SetBool("Grounded", true);
@@ -52,6 +60,8 @@ public class Cat : MonoBehaviour
             CatDead = true;
         if (collision.gameObject.CompareTag("End"))
             InEnd = true;
+
+            
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -87,8 +97,17 @@ public class Cat : MonoBehaviour
 
         if (MousePressedJudge&&CanAddForce)
         {
-            CatRig.AddForce(new Vector2(ForceX, ForceY));
-            Anim.SetBool("Jumping", true);
+            if(!Filped)
+            {
+                CatRig.AddForce(new Vector2(ForceX, ForceY));
+                Anim.SetBool("Jumping", true);
+            }
+            else if(Filped)
+            {
+                CatRig.AddForce(new Vector2(-ForceX, ForceY));
+                Anim.SetBool("Jumping", true);
+            }
+
         }
 
         if (CatDead)
