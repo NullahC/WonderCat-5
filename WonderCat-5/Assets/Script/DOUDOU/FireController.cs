@@ -22,8 +22,9 @@ public class FireController : MonoBehaviour
     {
         Rigidbody2D rig = transform.GetComponent<Rigidbody2D>();
         Instantiate(fire, transform.position, Quaternion.identity);
+       
         fire.SetActive(true);
-        rig.constraints = RigidbodyConstraints2D.None;
-
+        //rig.constraints = RigidbodyConstraints2D.None;
+        Destroy(gameObject);
     }
 }
