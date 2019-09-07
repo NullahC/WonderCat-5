@@ -65,7 +65,7 @@ public class Cat : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Fire") || collision.gameObject.CompareTag("DeathPlane"))
+        if (collision.gameObject.CompareTag("Fire"))
             CatDead = true;
 
         if(collision.gameObject.CompareTag("diamond"))

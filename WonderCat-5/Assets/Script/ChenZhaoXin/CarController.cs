@@ -52,8 +52,8 @@ public class CarController : MonoBehaviour
                 Wheel[0].motor = wheelmotorF;
                 Wheel[1].motor = wheelmotorB;
                 CarMove = false;
+                //CarRig.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
-
             CarRig.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         if (collision.gameObject.CompareTag("Reverser"))
