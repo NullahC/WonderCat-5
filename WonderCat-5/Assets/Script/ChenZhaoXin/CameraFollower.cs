@@ -10,7 +10,7 @@ public class CameraFollower : MonoBehaviour
     private bool FangDajudge = false;
     private float ReduceingSize = 5;
     private float movingCamera;
-    public bool PauseCamera=false;
+    private bool PauseCamera=false;
     // Start is called before the first frame update
     void Start()
     {

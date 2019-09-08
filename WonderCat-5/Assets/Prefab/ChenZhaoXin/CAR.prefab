@@ -424,7 +424,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!68 &637165139
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -476,6 +476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MotorSpeed: 400
   FollowTheCat: 0
+  Filped: 0
 --- !u!1 &2681300532640302201
 GameObject:
   m_ObjectHideFlags: 0

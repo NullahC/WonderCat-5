@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5248966232631022352}
   - component: {fileID: 5248966232631022359}
-  - component: {fileID: 5248966232631022358}
+  - component: {fileID: 339811950}
   m_Layer: 0
   m_Name: DeathPlane_level1
   m_TagString: DeathPlane
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5248966232631022357}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.028, y: -9.540382, z: 0}
-  m_LocalScale: {x: 6.0305743, y: 1, z: 1}
+  m_LocalScale: {x: 6.5250816, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5248966232631022358
+--- !u!61 &339811950
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.97239506}
+  m_Offset: {x: 0, y: 0.82417846}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -104,5 +104,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.24, y: 0.6152098}
+  m_Size: {x: 10.24, y: 4.208357}
   m_EdgeRadius: 0
