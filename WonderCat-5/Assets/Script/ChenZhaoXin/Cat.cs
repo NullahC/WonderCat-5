@@ -24,6 +24,8 @@ public class Cat : MonoBehaviour
     private int InEndTimeCounter = 0;
     private bool Filped = false;
     private GameObject Car = null;
+    private float BatDead = 0;
+    private bool hitBat = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +68,12 @@ public class Cat : MonoBehaviour
                 }
             }
         }
+        if(hitBat)
+        {
+            BatDead = BatDead - 0.1f;
+            GameObject.FindGameObjectWithTag("bat").transform.position = 
+                new Vector3(GameObject.FindGameObjectWithTag("bat").transform.position.x, BatDead, 0);
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -90,6 +98,8 @@ public class Cat : MonoBehaviour
         if(collision.gameObject.CompareTag("BatCheck"))
         {
             CatRig.AddForce(new Vector2(100, 200));
+            BatDead = GameObject.FindGameObjectWithTag("bat").transform.position.y;
+            hitBat = true;
         }
 
         if (collision.gameObject.CompareTag("ZhaMen")|| collision.gameObject.CompareTag("bat"))

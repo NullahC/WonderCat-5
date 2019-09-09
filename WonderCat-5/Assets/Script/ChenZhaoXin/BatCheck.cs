@@ -19,6 +19,7 @@ public class BatCheck : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         BatAnim.SetTrigger("BatDead");
-        print("1");
+        GetComponent<EdgeCollider2D>().enabled = false;
+        GameObject.FindGameObjectWithTag("bat").GetComponent<BoxCollider2D>().enabled = false;
     }
 }

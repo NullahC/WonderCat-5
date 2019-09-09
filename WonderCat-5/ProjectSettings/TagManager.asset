@@ -15,6 +15,7 @@ TagManager:
   - bat
   - DeathPlane
   - Reverser
+  - BatCheck
   layers:
   - Default
   - TransparentFX
