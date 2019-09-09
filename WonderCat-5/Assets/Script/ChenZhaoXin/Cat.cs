@@ -69,9 +69,12 @@ public class Cat : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Grouded = false;
-        Anim.SetBool("Grounded", false);            
-        Anim.SetBool("Falling", false);
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            Grouded = false;
+            Anim.SetBool("Grounded", false);
+            Anim.SetBool("Falling", false);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
