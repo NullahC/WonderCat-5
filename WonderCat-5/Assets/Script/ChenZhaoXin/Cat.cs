@@ -48,7 +48,7 @@ public class Cat : MonoBehaviour
         else if (InEnd)
         {
             InEndTimeCounter++;
-            if (InEndTimeCounter >= 100)
+            if (InEndTimeCounter >= 130)
             {
                 if (CatScaleXInEnd >= 0.05)
                     CatScaleXInEnd = CatScaleXInEnd - 0.01f;

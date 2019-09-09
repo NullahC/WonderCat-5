@@ -21,8 +21,12 @@ public class CameraFollower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movingCamera = MCamera.transform.position.x ;
-        if(!PauseCamera)
+       
+    }
+    private void LateUpdate()
+    {
+        movingCamera = MCamera.transform.position.x;
+        if (!PauseCamera)
         {
             if (!FangDajudge)
             {
