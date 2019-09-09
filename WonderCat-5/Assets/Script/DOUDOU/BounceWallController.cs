@@ -28,14 +28,7 @@ public class BounceWallCtro : MonoBehaviour
             iTween.MoveTo(gameObject, args);
         }
 
-        if (collision.gameObject.name == "bounceWall_right")
-        {
-            Hashtable args = new Hashtable();
-            args.Add("speed", 5.0f);
-            args.Add("path", iTweenPath.GetPath("rightBounceWall"));
-            args.Add("easeType", type);
-            iTween.MoveTo(gameObject, args);
-        }
+       
 
     }
 }
