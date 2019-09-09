@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8245556769014598303}
   - component: {fileID: 8245556769014598296}
   - component: {fileID: 8245556769014598297}
+  - component: {fileID: 2581614814331799337}
   m_Layer: 0
   m_Name: bounceWall_left
   m_TagString: Untagged
@@ -90,7 +91,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1842009, y: 0.010296345}
@@ -106,3 +107,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3192248, y: 2.8071074}
   m_EdgeRadius: 0
+--- !u!114 &2581614814331799337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8245556769014598298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f50b714778baaa448e286af187a3f2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
