@@ -37,79 +37,6 @@ public class Cat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Grouded = false;
-        Anim.SetBool("Grounded", false);            
-        Anim.SetBool("Falling", false);
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Car"))
-        {
-            Car = collision.gameObject;
-            Filped = Car.GetComponent<CarController>().Filped;
-            GetComponent<SpriteRenderer>().flipX = Filped;
-        }
-        LastY = transform.position.y;
-        Grouded = true;
-        Anim.SetBool("Grounded", true);
-        if (collision.gameObject.CompareTag("ZhaMen"))
-            CatDead = true;
-        if (collision.gameObject.CompareTag("End"))
-            InEnd = true;
-
-            
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Fire"))
-            CatDead = true;
-
-        if(collision.gameObject.CompareTag("diamond"))
-        {
-            Destroy(collision.gameObject);
-        }
-    }
-    private void FixedUpdate()
-    {
-        CatY = transform.position.y;
-        MousePressedJudge = Input.GetButton("Fire1");
-        if(Grouded)
-        {
-            CanAddForce = true;
-        }
-        else if (!Grouded)
-        {
-            if (Input.GetButtonUp("Fire1"))
-                CanAddForce = false;
-            Anim.SetBool("Falling", true);
-            Anim.SetBool("Jumping", false);
-        }
-        if(CatY - LastY >= JumpHeight)
-        {
-            CanAddForce = false;
-            Anim.SetBool("Falling", true);
-            Anim.SetBool("Jumping", false);
-        }
-
-        if (MousePressedJudge&&CanAddForce)
-        {
-            if(!Filped)
-            {
-                CatRig.AddForce(new Vector2(ForceX, ForceY));
-                Anim.SetBool("Jumping", true);
-            }
-            else if(Filped)
-            {
-                CatRig.AddForce(new Vector2(-ForceX, ForceY));
-                Anim.SetBool("Jumping", true);
-            }
-
-        }
-
         if (CatDead)
         {
             BoxC.enabled = false;
@@ -137,6 +64,78 @@ public class Cat : MonoBehaviour
                         InEnd = false;
                     }
                 }
+            }
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        Grouded = false;
+        Anim.SetBool("Grounded", false);            
+        Anim.SetBool("Falling", false);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            Car = collision.gameObject;
+            Filped = Car.GetComponent<CarController>().Filped;
+            GetComponent<SpriteRenderer>().flipX = Filped;
+            Grouded = true;
+            Anim.SetBool("Grounded", true);
+            LastY = transform.position.y;
+        }
+
+        if (collision.gameObject.CompareTag("ZhaMen"))
+            CatDead = true;
+        if (collision.gameObject.CompareTag("End"))
+        {
+            InEnd = true;
+            Anim.SetBool("Grounded", true);
+        }
+
+            
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Fire"))
+            CatDead = true;
+
+        if(collision.gameObject.CompareTag("diamond"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+    private void FixedUpdate()
+    {
+        CatY = transform.position.y;
+        MousePressedJudge = Input.GetButton("Fire1");
+        if(Grouded)
+            CanAddForce = true;   
+        else if (!Grouded)
+        {
+            if (Input.GetButtonUp("Fire1"))
+                CanAddForce = false;
+            Anim.SetBool("Falling", true);
+            Anim.SetBool("Jumping", false);
+        }
+        if(CatY - LastY >= JumpHeight)
+        {
+            CanAddForce = false;
+            Anim.SetBool("Falling", true);
+            Anim.SetBool("Jumping", false);
+        }
+
+        if (MousePressedJudge&&CanAddForce)
+        {
+            if(!Filped)
+            {
+                CatRig.AddForce(new Vector2(ForceX, ForceY));
+                Anim.SetBool("Jumping", true);
+            }
+            else if(Filped)
+            {
+                CatRig.AddForce(new Vector2(-ForceX, ForceY));
+                Anim.SetBool("Jumping", true);
             }
         }
     }

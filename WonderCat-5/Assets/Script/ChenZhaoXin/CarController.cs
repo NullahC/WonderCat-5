@@ -63,17 +63,14 @@ public class CarController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Reverser"))
             Filped = true;
-    }
+        }
     private void OnCollisionExit2D(Collision2D collision)
     {
         //CarRig.constraints = RigidbodyConstraints2D.None;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Fire"))
-        {
-
-        }
+        if (collision.gameObject.CompareTag("Fire")) ;
         else
         {
             CarRig.constraints = RigidbodyConstraints2D.None;

@@ -380,9 +380,10 @@ GameObject:
   - component: {fileID: 637165139}
   - component: {fileID: 637165138}
   - component: {fileID: 637165141}
+  - component: {fileID: 4916856919320221137}
   m_Layer: 12
   m_Name: CAR
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -441,7 +442,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.8459139, y: -0.44704878}
+  - {x: 0.772511, y: -0.44273102}
+  - {x: 3.718896, y: -0.44271493}
   - {x: 3.6119504, y: -0.44271493}
 --- !u!251 &637165138
 PlatformEffector2D:
@@ -475,8 +477,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotorSpeed: 400
-  FollowTheCat: 0
+  FollowTheCat: 1
   Filped: 0
+--- !u!114 &4916856919320221137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681300531935740536}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cd34768ae122646b98d204bd80f62f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ResversedSpeed: 400
 --- !u!1 &2681300532640302201
 GameObject:
   m_ObjectHideFlags: 0

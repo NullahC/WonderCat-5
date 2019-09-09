@@ -5,15 +5,16 @@ using UnityEngine;
 
 public class ResverserController : MonoBehaviour
 {
-    public WheelJoint2D LWheel;
-    public WheelJoint2D RWheel;
+    public float ResversedSpeed = 400;
+    private WheelJoint2D[] Wheel = null;
     private JointMotor2D left;
     private JointMotor2D right;
     // Start is called before the first frame update
     void Start()
     {
-        left = LWheel.motor;
-        right = RWheel.motor;
+        Wheel = GetComponentsInChildren<WheelJoint2D>();
+        left = Wheel[1].motor;
+        right =Wheel[0].motor;
     }
 
     // Update is called once per frame
@@ -34,10 +35,10 @@ public class ResverserController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Reverser"))
         {
-            left.motorSpeed = -400;
-            right.motorSpeed = -400;
-            LWheel.motor = left;
-            RWheel.motor = right;
+            left.motorSpeed = -ResversedSpeed;
+            right.motorSpeed = -ResversedSpeed;
+            Wheel[1].motor = left;
+            Wheel[0].motor = right;
             GameObject.FindGameObjectWithTag("Hero").transform.rotation = Quaternion.Euler(Vector3.left*180);
         }
         

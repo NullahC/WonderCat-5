@@ -9,6 +9,7 @@ public class SwitchController : MonoBehaviour
     [HideInInspector]
     public Sprite CloseSwitch = null;
     public GameObject []MovedBySwitch = null;
+    public GameObject fireP;
 
     private SpriteRenderer SwitchRender = null;
     private bool SwitchJudge = false;
@@ -17,6 +18,7 @@ public class SwitchController : MonoBehaviour
     void Start()
     {
         SwitchRender = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -37,6 +39,10 @@ public class SwitchController : MonoBehaviour
                 }
                 else if (MovedBySwitch[i].tag == "Fire" && SwitchJudge)
                 {
+                    fireP.transform.position = MovedBySwitch[i]. transform.position;
+                    Rigidbody2D rig = MovedBySwitch[i].transform.GetComponent<Rigidbody2D>();
+                    Instantiate(fireP, MovedBySwitch[i].transform.position, Quaternion.identity);
+                    fireP.SetActive(true);
                     Destroy(MovedBySwitch[i]);
                 }
             }
