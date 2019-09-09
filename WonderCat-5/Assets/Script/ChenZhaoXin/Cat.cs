@@ -87,8 +87,12 @@ public class Cat : MonoBehaviour
             Anim.SetBool("Grounded", true);
             LastY = transform.position.y;
         }
+        if(collision.gameObject.CompareTag("BatCheck"))
+        {
+            CatRig.AddForce(new Vector2(100, 200));
+        }
 
-        if (collision.gameObject.CompareTag("ZhaMen"))
+        if (collision.gameObject.CompareTag("ZhaMen")|| collision.gameObject.CompareTag("bat"))
             CatDead = true;
         if (collision.gameObject.CompareTag("End"))
         {
