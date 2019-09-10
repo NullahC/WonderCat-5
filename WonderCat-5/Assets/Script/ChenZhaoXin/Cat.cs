@@ -11,6 +11,7 @@ public class Cat : MonoBehaviour
     public AudioClip Jump = null;
     public AudioClip Land = null;
     public AudioClip DiamondDestory = null;
+    public AudioClip BatDown = null;
 
     private bool MousePressedJudge = false;
     private Rigidbody2D CatRig = null;
@@ -74,7 +75,7 @@ public class Cat : MonoBehaviour
             }
         }
         if(hitBat)
-        {
+        {  
             BatDead = BatDead - 0.1f;
             HitedBat.transform.position = 
                 new Vector3(HitedBat.transform.position.x, BatDead, 0);
@@ -104,6 +105,7 @@ public class Cat : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("BatCheck"))
         {
+            AudioSource.PlayClipAtPoint(BatDown, Camera.main.transform.position);
             CatRig.AddForce(new Vector2(100, 200));
             BatDead = collision.gameObject.transform.position.y;
             HitedBat = collision.gameObject;
