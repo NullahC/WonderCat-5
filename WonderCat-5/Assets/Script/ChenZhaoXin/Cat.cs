@@ -8,6 +8,11 @@ public class Cat : MonoBehaviour
     public float ForceX = 10.0f;
     public float JumpHeight = 10.0f;
 
+    public AudioClip Jump = null;
+    public AudioClip Land = null;
+    public AudioClip DiamondDestory = null;
+    public AudioClip BatDown = null;
+
     private bool MousePressedJudge = false;
     private Rigidbody2D CatRig = null;
     private float LastY = 0;
@@ -70,7 +75,7 @@ public class Cat : MonoBehaviour
             }
         }
         if(hitBat)
-        {
+        {  
             BatDead = BatDead - 0.1f;
             HitedBat.transform.position = 
                 new Vector3(HitedBat.transform.position.x, BatDead, 0);
@@ -81,6 +86,7 @@ public class Cat : MonoBehaviour
         if (collision.gameObject.CompareTag("Car"))
         {
             Grouded = false;
+            AudioSource.PlayClipAtPoint(Jump, Camera.main.transform.position);
             Anim.SetBool("Grounded", false);
             Anim.SetBool("Falling", false);
         }
@@ -89,15 +95,17 @@ public class Cat : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Car"))
         {
+            Anim.SetBool("Grounded", true);
+            AudioSource.PlayClipAtPoint(Land, Camera.main.transform.position);
+            LastY = transform.position.y;
+            Grouded = true;      
             Car = collision.gameObject;
             Filped = Car.GetComponent<CarController>().Filped;
             GetComponent<SpriteRenderer>().flipX = Filped;
-            Grouded = true;
-            Anim.SetBool("Grounded", true);
-            LastY = transform.position.y;
         }
         if(collision.gameObject.CompareTag("BatCheck"))
         {
+            AudioSource.PlayClipAtPoint(BatDown, Camera.main.transform.position);
             CatRig.AddForce(new Vector2(100, 200));
             BatDead = collision.gameObject.transform.position.y;
             HitedBat = collision.gameObject;
@@ -121,6 +129,7 @@ public class Cat : MonoBehaviour
 
         if(collision.gameObject.CompareTag("diamond"))
         {
+            AudioSource.PlayClipAtPoint(DiamondDestory, Camera.main.transform.position);
             Destroy(collision.gameObject);
         }
     }
@@ -129,7 +138,9 @@ public class Cat : MonoBehaviour
         CatY = transform.position.y;
         MousePressedJudge = Input.GetButton("Fire1");
         if(Grouded)
-            CanAddForce = true;   
+        {   Anim.SetBool("Grounded", true);
+            CanAddForce = true;
+        }
         else if (!Grouded)
         {
             if (Input.GetButtonUp("Fire1"))
@@ -149,7 +160,7 @@ public class Cat : MonoBehaviour
             if(!Filped)
             {
                 CatRig.AddForce(new Vector2(ForceX, ForceY));
-                Anim.SetBool("Jumping", true);
+                Anim.SetBool("Jumping", true);         
             }
             else if(Filped)
             {

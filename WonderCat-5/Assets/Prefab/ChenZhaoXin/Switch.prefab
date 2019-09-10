@@ -112,3 +112,7 @@ MonoBehaviour:
   OpenSwitch: {fileID: 21300000, guid: baa2bcefaafa44549bf159dbcb77ae4e, type: 3}
   CloseSwitch: {fileID: 21300000, guid: ea2477c1cc8718747bc4a360763f2055, type: 3}
   MovedBySwitch: []
+  fireP: {fileID: 0}
+  Swiching: {fileID: 8300000, guid: ac70a2a22ba3359438b8ce1159a8bbf7, type: 3}
+  ZhamenOpened: {fileID: 8300000, guid: a02607fdf14e9a3498632c79c1e06b1a, type: 3}
+  FlameOff: {fileID: 8300000, guid: 258a3527b42196c4496a3ed970e1469f, type: 3}
