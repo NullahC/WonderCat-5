@@ -12,6 +12,7 @@ public class SwitchController : MonoBehaviour
     public GameObject fireP;
     public AudioClip Swiching=null;
     public AudioClip ZhamenOpened = null;
+    public AudioClip FlameOff = null;
 
     private SpriteRenderer SwitchRender = null;
     private bool SwitchJudge = false;
@@ -48,6 +49,7 @@ public class SwitchController : MonoBehaviour
                     Rigidbody2D rig = MovedBySwitch[i].transform.GetComponent<Rigidbody2D>();
                     Instantiate(fireP, MovedBySwitch[i].transform.position, Quaternion.identity);
                     fireP.SetActive(true);
+                    AudioSource.PlayClipAtPoint(FlameOff, Camera.main.transform.position);
                     Destroy(MovedBySwitch[i]);
                 }
                 else if (MovedBySwitch[i].tag == "Bats" && SwitchJudge)
