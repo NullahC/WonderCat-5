@@ -10,10 +10,13 @@ public class SwitchController : MonoBehaviour
     public Sprite CloseSwitch = null;
     public GameObject []MovedBySwitch = null;
     public GameObject fireP;
+    public AudioClip Swiching=null;
+    public AudioClip ZhamenOpened = null;
 
     private SpriteRenderer SwitchRender = null;
     private bool SwitchJudge = false;
     private float RaiseH = 0;
+    private bool ZhaMenJ = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,7 @@ public class SwitchController : MonoBehaviour
     void Update()
     {
         SwitchRender.sprite = SwitchJudge ? OpenSwitch : CloseSwitch;
+
     }
     private void FixedUpdate()
     {
@@ -34,6 +38,7 @@ public class SwitchController : MonoBehaviour
             {
                 if (MovedBySwitch[i].tag == "ZhaMen" && SwitchJudge)
                 {
+                    ZhaMenJ = true;
                     RaiseH = RaiseH + 0.008f;
                     MovedBySwitch[i].transform.position = new Vector2(MovedBySwitch[i].transform.position.x, MovedBySwitch[i].transform.position.y + RaiseH);
                 }
@@ -62,5 +67,11 @@ public class SwitchController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SwitchJudge = true;
+        AudioSource.PlayClipAtPoint(Swiching, Camera.main.transform.position);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (ZhaMenJ)
+            AudioSource.PlayClipAtPoint(ZhamenOpened, Camera.main.transform.position);
     }
 }

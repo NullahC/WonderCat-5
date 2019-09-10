@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraFollower : MonoBehaviour
 {
     public GameObject MCamera = null;
+    public AudioClip intoDP = null;
     private Camera MCameraC = null;
     private float distanceX;
     private bool FangDajudge = false;
@@ -69,6 +70,9 @@ public class CameraFollower : MonoBehaviour
         if (collision.gameObject.CompareTag("Fire"))
             PauseCamera = true;
         if (collision.gameObject.CompareTag("DeathPlane"))
+        {
             PauseCamera = true;
+            AudioSource.PlayClipAtPoint(intoDP, Camera.main.transform.position);
+        }
     }
 }
