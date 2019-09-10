@@ -15,7 +15,6 @@ public class CarController : MonoBehaviour
     private bool startFllow = false;
     private Transform CatT = null;
     private CircleCollider2D[] WheelsCollider = null;
-    [HideInInspector]
     public bool Filped = false;
     private float distanceX = 0;
     // Start is called before the first frame update
@@ -62,7 +61,15 @@ public class CarController : MonoBehaviour
             //CarRig.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         if (collision.gameObject.CompareTag("Reverser"))
-            Filped = true;
+        {
+            if(!Filped)
+                Filped = true;
+            else if(Filped)
+            {
+                Filped = false;
+            }
+        }
+            
         }
     private void OnCollisionExit2D(Collision2D collision)
     {

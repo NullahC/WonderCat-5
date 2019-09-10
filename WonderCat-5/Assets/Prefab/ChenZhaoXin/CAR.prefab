@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotorSpeed: 400
-  FollowTheCat: 1
+  FollowTheCat: 0
   Filped: 0
 --- !u!114 &4916856919320221137
 MonoBehaviour:

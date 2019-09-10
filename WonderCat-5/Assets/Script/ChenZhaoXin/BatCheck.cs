@@ -8,7 +8,7 @@ public class BatCheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BatAnim =GameObject.FindGameObjectWithTag("bat").GetComponent<Animator>();
+        BatAnim =GetComponent<Animator>();
     }
 
     // Update is called once per frame

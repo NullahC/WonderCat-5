@@ -45,6 +45,12 @@ public class SwitchController : MonoBehaviour
                     fireP.SetActive(true);
                     Destroy(MovedBySwitch[i]);
                 }
+                else if (MovedBySwitch[i].tag == "Bats" && SwitchJudge)
+                {
+                    MovedBySwitch[i].transform.position = Vector3.MoveTowards(MovedBySwitch[i].transform.position,
+                        GameObject.FindGameObjectWithTag("Hero").transform.position,
+                        0.1f);
+                }
             }
             catch(System.Exception)
             {

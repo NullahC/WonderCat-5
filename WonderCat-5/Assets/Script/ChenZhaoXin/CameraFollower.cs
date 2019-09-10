@@ -61,7 +61,7 @@ public class CameraFollower : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("End"))
             FangDajudge = true;
-        if (collision.gameObject.CompareTag("ZhaMen"))
+        if (collision.gameObject.CompareTag("ZhaMen")|| collision.gameObject.CompareTag("bat"))
             PauseCamera = true;
     }
     private void OnTriggerEnter2D(Collider2D collision)
