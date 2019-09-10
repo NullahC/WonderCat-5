@@ -13,6 +13,8 @@ public class Cat : MonoBehaviour
     public AudioClip DiamondDestory = null;
     public AudioClip BatDown = null;
 
+    public static float Count = 0;
+
     private bool MousePressedJudge = false;
     private Rigidbody2D CatRig = null;
     private float LastY = 0;
@@ -129,6 +131,7 @@ public class Cat : MonoBehaviour
 
         if(collision.gameObject.CompareTag("diamond"))
         {
+            Count++;
             AudioSource.PlayClipAtPoint(DiamondDestory, Camera.main.transform.position);
             Destroy(collision.gameObject);
         }

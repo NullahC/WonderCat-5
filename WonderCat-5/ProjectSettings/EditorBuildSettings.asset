@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChenZhaoXinLevel.unity
     guid: 62d6715e12fb5a244b501cf7d0417485
+  - enabled: 1
+    path: Assets/Scenes/ZhangYing.unity
+    guid: 1cd7fb21862a8b14487b9287b4dae3ab
   m_configObjects: {}
