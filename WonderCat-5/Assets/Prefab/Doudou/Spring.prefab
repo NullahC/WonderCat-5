@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9696466265f4324a9f18e58f4b07c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  springMusic: {fileID: 0}
 --- !u!1 &7525747023405445163
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9696466265f4324a9f18e58f4b07c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  springMusic: {fileID: 8300000, guid: 965ee9cbdbf3dd24698aa3e2fc9132b9, type: 3}
 --- !u!1 &7525747023435456486
 GameObject:
   m_ObjectHideFlags: 0

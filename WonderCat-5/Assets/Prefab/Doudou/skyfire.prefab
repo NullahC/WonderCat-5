@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 2603439173455339433, guid: 94d3134d5dd77fe418f9066579a2017e, type: 3}
+  fireMusic: {fileID: 8300000, guid: 258a3527b42196c4496a3ed970e1469f, type: 3}

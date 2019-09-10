@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spring : MonoBehaviour
 {
+    public AudioClip springMusic = null;
     private BoxCollider2D m_BOX;
     void Start()
     {
@@ -22,5 +23,6 @@ public class Spring : MonoBehaviour
         {
             m_BOX.isTrigger = true;
         }
+        AudioSource.PlayClipAtPoint(springMusic, Camera.main.transform.position);
     }
 }

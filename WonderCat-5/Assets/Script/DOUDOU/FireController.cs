@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireController : MonoBehaviour
 {
     public GameObject fire;
-
+    public AudioClip fireMusic=null;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +25,12 @@ public class FireController : MonoBehaviour
        
         fire.SetActive(true);
         //rig.constraints = RigidbodyConstraints2D.None;
+
         Destroy(gameObject);
+        //播放碰到火焰音效
+        
+            AudioSource.PlayClipAtPoint(fireMusic, Camera.main.transform.position);
+            
+        
     }
 }
