@@ -9,7 +9,7 @@ public class Fellow : MonoBehaviour
     void Start()
     {
         //rightMenu.SetActive(false);
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 2.0f);
     }
 
     //    // Update is called once per frame
