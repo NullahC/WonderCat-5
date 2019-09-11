@@ -12,6 +12,7 @@ public class Cat : MonoBehaviour
     public AudioClip Land = null;
     public AudioClip DiamondDestory = null;
     public AudioClip BatDown = null;
+    public AudioClip KilledByFire = null;
     [HideInInspector]
     public static float Count = 0;
 
@@ -127,7 +128,10 @@ public class Cat : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Fire"))
+        {
+            AudioSource.PlayClipAtPoint(KilledByFire, Camera.main.transform.position);
             CatDead = true;
+        }
 
         if(collision.gameObject.CompareTag("diamond"))
         {

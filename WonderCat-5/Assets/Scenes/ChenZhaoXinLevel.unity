@@ -10149,7 +10149,7 @@ MonoBehaviour:
   - {x: 121.67557, y: 15.384798, z: 0}
   - {x: 124.3956, y: 18.424925, z: 0}
   - {x: 127.803894, y: 18.68081, z: 0}
-  - {x: 129.82152, y: 17.284523, z: 0}
+  - {x: 129.58188, y: 17.284523, z: 0}
   nodeCount: 6
   initialized: 1
   initialName: New Path 5
@@ -16467,6 +16467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  SpringB: {fileID: 8300000, guid: 0badd47422bb13447b6c6ea4d939830a, type: 3}
 --- !u!1001 &1939970790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16791,6 +16792,11 @@ PrefabInstance:
       propertyPath: intoDP
       value: 
       objectReference: {fileID: 8300000, guid: 419bdcd8fa053cb4bbfc8b335fadbda9, type: 3}
+    - target: {fileID: 8937951600138457770, guid: eaff7dc4117d9f147946ecfd4ccc1c3c,
+        type: 3}
+      propertyPath: KilledByFire
+      value: 
+      objectReference: {fileID: 8300000, guid: 89cd70cf59aabc54495bcc24cbddd3b8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaff7dc4117d9f147946ecfd4ccc1c3c, type: 3}
 --- !u!1 &2010351514

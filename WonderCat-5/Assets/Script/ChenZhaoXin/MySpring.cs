@@ -5,6 +5,7 @@ using UnityEngine;
 public class MySpring : MonoBehaviour
 {
     public iTween.EaseType type;
+    public AudioClip SpringB;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +24,11 @@ public class MySpring : MonoBehaviour
         if (collision.gameObject.name == "Spring")
         {
             Hashtable args = new Hashtable();
-            args.Add("speed", 5.0f);
+            args.Add("speed", 15.0f);
             args.Add("path", iTweenPath.GetPath("CzxSpringPath"));
             args.Add("easeType", type);
             iTween.MoveTo(gameObject, args);
+            AudioSource.PlayClipAtPoint(SpringB, Camera.main.transform.position);
         }
 
     }
