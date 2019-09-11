@@ -15,12 +15,14 @@ public class chen : MonoBehaviour
     {
         //场景跳转
         SceneManager.LoadScene("menu");
+        Cat.Count = 0;
     }
     public void new_Click()
 
     {
         //场景跳转
         SceneManager.LoadScene("ChenZhaoXinLevel");
+        Cat.Count = 0;
     }
 
     public void back_Click()
@@ -28,6 +30,7 @@ public class chen : MonoBehaviour
     {
         //场景跳转
         SceneManager.LoadScene("ui1");
+        Cat.Count = 0;
     }
     void Start()
     {

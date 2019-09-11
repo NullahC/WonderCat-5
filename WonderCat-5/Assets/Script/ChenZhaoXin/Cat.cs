@@ -12,7 +12,7 @@ public class Cat : MonoBehaviour
     public AudioClip Land = null;
     public AudioClip DiamondDestory = null;
     public AudioClip BatDown = null;
-
+    [HideInInspector]
     public static float Count = 0;
 
     private bool MousePressedJudge = false;

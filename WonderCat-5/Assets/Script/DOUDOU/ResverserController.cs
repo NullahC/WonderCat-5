@@ -12,9 +12,16 @@ public class ResverserController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Wheel = GetComponentsInChildren<WheelJoint2D>();
-        left = Wheel[1].motor;
-        right =Wheel[0].motor;
+        try
+        {
+            Wheel = GetComponentsInChildren<WheelJoint2D>();
+            left = Wheel[1].motor;
+            right = Wheel[0].motor;
+        }
+        catch(System.Exception)
+        {
+
+        }
     }
 
     // Update is called once per frame
